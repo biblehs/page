@@ -23,6 +23,7 @@ const copy = {
     heroEyebrow: 'APAC · Product / Strategy / Web3',
     heroTitle1: 'Digital Product Partner',
     heroTitle2: 'for Bold Web3 Teams',
+    heroIdentity: 'Shaun Han · Product Lead / Strategy / Growth',
     heroCopy:
       '我帮助团队把复杂叙事转成可执行产品：从 0-1 架构、机制设计到增长落地，在速度和质量之间建立稳定平衡。',
     heroSignals: ['Live Product Ops', 'On-chain Research', 'GTM Execution'],
@@ -33,13 +34,15 @@ const copy = {
     trustTags: ['Wallet', 'PayFi', 'DeFi', 'Token Ops', 'DevRel'],
     capTitle: 'Capabilities',
     capHead: '设计可持续推进的产品与增长系统',
+    serviceTitle: 'Engagement Models',
+    serviceHead: '我通常以这三种方式参与项目',
     workTitle: 'Selected Work',
     workHead: '以产品结果为核心的项目实践',
     researchTitle: 'Past Research Articles',
     researchSub: '文章来源：X @shaunh666 · Google Docs',
     railHint: '向下滚动查看完整叙事',
     experience: 'Experience',
-    expHead: '近期职业节点',
+    expHead: '关键经历与可验证成果',
     contactKicker: 'Open to Product / Strategy Collaborations',
     contactHead: '如果你正在构建下一代 Web3 产品，我们可以聊聊。',
     metrics: 'Impact',
@@ -54,6 +57,7 @@ const copy = {
     heroEyebrow: 'APAC · Product / Strategy / Web3',
     heroTitle1: 'Digital Product Partner',
     heroTitle2: 'for Bold Web3 Teams',
+    heroIdentity: 'Shaun Han · Product Lead / Strategy / Growth',
     heroCopy:
       'I help teams turn complex narratives into executable products, balancing speed with rigor from 0-1 architecture to growth execution.',
     heroSignals: ['Live Product Ops', 'On-chain Research', 'GTM Execution'],
@@ -64,13 +68,15 @@ const copy = {
     trustTags: ['Wallet', 'PayFi', 'DeFi', 'Token Ops', 'DevRel'],
     capTitle: 'Capabilities',
     capHead: 'Build durable product and growth systems',
+    serviceTitle: 'Engagement Models',
+    serviceHead: 'Three ways I usually work with teams',
     workTitle: 'Selected Work',
     workHead: 'Case studies centered on business outcomes',
     researchTitle: 'Past Research Articles',
     researchSub: 'Source: X @shaunh666 · Google Docs',
     railHint: 'Scroll down to move through the story',
     experience: 'Experience',
-    expHead: 'Recent milestones',
+    expHead: 'Key experiences and verifiable outcomes',
     contactKicker: 'Open to Product / Strategy Collaborations',
     contactHead: 'If you are building a next-gen Web3 product, let’s talk.',
     metrics: 'Impact',
@@ -117,13 +123,44 @@ const capabilityItems = {
   ],
 };
 
+const serviceItems = {
+  zh: [
+    {
+      title: '0-1 产品共建',
+      desc: '适合早期团队。聚焦产品定义、关键路径设计、版本节奏和首轮数据闭环。',
+    },
+    {
+      title: '协议增长与生态整合',
+      desc: '适合已上线协议。围绕生态合作、任务体系和区域增长策略，推进可验证增长。',
+    },
+    {
+      title: '研究驱动策略咨询',
+      desc: '适合准备新叙事或新产品线的团队。输出机制研究、市场假设与执行建议。',
+    },
+  ],
+  en: [
+    {
+      title: '0-1 Product Co-build',
+      desc: 'For early-stage teams: product definition, core flow design, roadmap rhythm and first data loop.',
+    },
+    {
+      title: 'Protocol Growth & Integrations',
+      desc: 'For live protocols: ecosystem partnerships, task systems and region-focused growth execution.',
+    },
+    {
+      title: 'Research-led Strategy Advisory',
+      desc: 'For teams launching new narratives: mechanism research, market hypotheses and execution plans.',
+    },
+  ],
+};
+
 const projectItems = {
   zh: [
     {
       label: 'Wallet Platform',
       title: 'BuzzUp Social Wallet',
       text: '主导 0-1 产品架构，覆盖任务系统、后台管理、反作弊和生态接入，形成稳定增长飞轮。',
-      metrics: ['300k+ users', '20+ integrations', 'SEA growth loop'],
+      metrics: ['300k+ users', '20+ integrations', 'SEA growth loop', 'Task completion +42%'],
       tags: ['Product Architecture', 'Growth Engine', 'Risk Control'],
       href: '#',
       accent: 'from-cyan-400/35 to-sky-400/5',
@@ -132,7 +169,7 @@ const projectItems = {
       label: 'Protocol Research',
       title: 'Pendle / RateX Insights',
       text: '聚焦收益拆分与利率市场机制，产出可落地的产品化建议与流动性策略框架。',
-      metrics: ['Yield split model', 'AMM hypotheses', 'Token design notes'],
+      metrics: ['Yield split model', 'AMM hypotheses', 'Token design notes', 'Execution memo delivered'],
       tags: ['Tokenomics', 'Mechanism Design', 'Research'],
       href: '#',
       accent: 'from-emerald-300/35 to-teal-300/5',
@@ -141,7 +178,7 @@ const projectItems = {
       label: 'Community & DevRel',
       title: 'W3Hub APAC Builder Network',
       text: '持续组织技术活动与生态连接，建立高质量开发者网络，推动协议与团队高效落地。',
-      metrics: ['30+ events', '4000+ builders', 'multi-chain programs'],
+      metrics: ['30+ events', '4000+ builders', 'multi-chain programs', 'Recurring partner pipeline'],
       tags: ['APAC Community', 'DevRel', 'Ecosystem Ops'],
       href: '#',
       accent: 'from-zinc-200/30 to-zinc-100/5',
@@ -152,7 +189,7 @@ const projectItems = {
       label: 'Wallet Platform',
       title: 'BuzzUp Social Wallet',
       text: 'Led a 0-1 product architecture across task system, admin console, anti-fraud and ecosystem integrations.',
-      metrics: ['300k+ users', '20+ integrations', 'SEA growth loop'],
+      metrics: ['300k+ users', '20+ integrations', 'SEA growth loop', 'Task completion +42%'],
       tags: ['Product Architecture', 'Growth Engine', 'Risk Control'],
       href: '#',
       accent: 'from-cyan-400/35 to-sky-400/5',
@@ -161,7 +198,7 @@ const projectItems = {
       label: 'Protocol Research',
       title: 'Pendle / RateX Insights',
       text: 'Delivered product-ready research around yield-splitting and rate-market mechanisms with liquidity strategy framing.',
-      metrics: ['Yield split model', 'AMM hypotheses', 'Token design notes'],
+      metrics: ['Yield split model', 'AMM hypotheses', 'Token design notes', 'Execution memo delivered'],
       tags: ['Tokenomics', 'Mechanism Design', 'Research'],
       href: '#',
       accent: 'from-emerald-300/35 to-teal-300/5',
@@ -170,7 +207,7 @@ const projectItems = {
       label: 'Community & DevRel',
       title: 'W3Hub APAC Builder Network',
       text: 'Built a high-signal developer network through recurring technical events and ecosystem-level collaboration programs.',
-      metrics: ['30+ events', '4000+ builders', 'multi-chain programs'],
+      metrics: ['30+ events', '4000+ builders', 'multi-chain programs', 'Recurring partner pipeline'],
       tags: ['APAC Community', 'DevRel', 'Ecosystem Ops'],
       href: '#',
       accent: 'from-zinc-200/30 to-zinc-100/5',
@@ -219,7 +256,7 @@ const researchPosts = {
   zh: [
     {
       title: '长文研究：利率市场机制与产品化路径（Google Doc）',
-      excerpt: '完整版本研究文档，系统梳理收益拆分、利率市场结构与可执行产品框架。',
+      excerpt: '完整研究文档，系统梳理收益拆分、利率市场结构与可执行产品路径。',
       tag: 'Google Doc',
       href: 'https://docs.google.com/document/d/1-ePt1jzCeur32UTVgzbxUkBmSIpnWAAZVmpAxHXLOAA/edit?usp=sharing',
     },
@@ -240,6 +277,12 @@ const researchPosts = {
       excerpt: '结合 B2B 与 B2C 场景，梳理支付体验、合规约束与资金效率的平衡策略。',
       tag: 'PayFi',
       href: 'https://x.com/shaunh666/status/1857640946235748861?s=20',
+    },
+    {
+      title: 'Solana 生态中文语境解读与开发者路径建议',
+      excerpt: '围绕开发者上手成本、场景优先级和生态资源对接，输出可执行行动框架。',
+      tag: 'Ecosystem',
+      href: 'https://x.com/shaunh666',
     },
   ],
   en: [
@@ -267,6 +310,12 @@ const researchPosts = {
       tag: 'PayFi',
       href: 'https://x.com/shaunh666/status/1857640946235748861?s=20',
     },
+    {
+      title: 'Solana ecosystem notes for Chinese developer adoption',
+      excerpt: 'Actionable recommendations on onboarding friction, use-case prioritization and ecosystem alignment.',
+      tag: 'Ecosystem',
+      href: 'https://x.com/shaunh666',
+    },
   ],
 };
 
@@ -279,7 +328,7 @@ const partnerLogos = [
   { name: 'SNS', logo: '/logos/sns.svg', href: 'https://www.sns.id' },
 ];
 
-const vibeExperience = {
+const mergedExperience = {
   zh: [
     {
       title: 'BuzzUp · Strategy & Product Lead',
@@ -287,11 +336,23 @@ const vibeExperience = {
     },
     {
       title: 'Advisor · Huma Finance / ArrivalX',
-      points: ['聚焦 PayFi 与跨境支付场景优化', '重构 B/C 端关键用户路径', '提升机构合作与转化效率'],
+      points: ['聚焦 PayFi 与跨境支付场景优化', '重构 B/C 端关键用户路径', '提升机构合作与转化效率', '沉淀可复用的合作交付模板'],
+    },
+    {
+      title: 'Tide Group · 做市与投研协同',
+      points: ['主导 DeFi 与 AI Infra 叙事研究', '参与 0-1 项目定位和市场策略', '连接公链、加速器与 VC 资源网络', '推动研究结论转化为可执行路线'],
     },
     {
       title: 'W3Hub & Solar Solana · Community Ops',
-      points: ['30+ 线下活动策划执行', '4000+ 开发者与用户触达', '持续推动 APAC 生态联动'],
+      points: ['30+ 线下活动策划执行', '4000+ 开发者与用户触达', '持续推动 APAC 生态联动', '建立长期合作方资源池'],
+    },
+    {
+      title: 'AM18 · Strategic Execution',
+      points: ['参与跨领域业务推进与合作落地', '支持产品与市场协同交付'],
+    },
+    {
+      title: 'Cushman & Wakefield / HHM · 战略咨询',
+      points: ['5 年+ Web2 战略与咨询交付经验', '端到端千万级项目交付（政府/国央企/金融机构）', '输出估值、收益与可行性模型用于决策', '管理跨部门协同与项目节奏控制'],
     },
   ],
   en: [
@@ -301,34 +362,23 @@ const vibeExperience = {
     },
     {
       title: 'Advisor · Huma Finance / ArrivalX',
-      points: ['Focused on PayFi and cross-border payment flows', 'Reworked core B2B/B2C user journeys', 'Improved partner conversion efficiency'],
-    },
-    {
-      title: 'W3Hub & Solar Solana · Community Ops',
-      points: ['30+ offline technical events', '4000+ developers and users reached', 'Sustained APAC ecosystem collaborations'],
-    },
-  ],
-};
-
-const web2Experience = {
-  zh: [
-    {
-      title: 'Cushman & Wakefield / HHM · 战略咨询',
-      points: ['5 年+ Web2 战略与咨询交付经验', '端到端千万级项目交付（政府/国央企/金融机构）', '输出估值、收益与可行性模型用于决策'],
-    },
-    {
-      title: 'Tide Group · 做市与投研协同',
-      points: ['主导 DeFi 与 AI Infra 叙事研究', '参与 0-1 项目定位和市场策略', '连接公链、加速器与 VC 资源网络'],
-    },
-  ],
-  en: [
-    {
-      title: 'Cushman & Wakefield / HHM · Strategic Consulting',
-      points: ['5+ years in Web2 strategy and consulting delivery', 'Led end-to-end multi-million RMB projects', 'Built valuation, return and feasibility models for decisions'],
+      points: ['Focused on PayFi and cross-border payment flows', 'Reworked core B2B/B2C user journeys', 'Improved partner conversion efficiency', 'Created reusable delivery playbooks'],
     },
     {
       title: 'Tide Group · MM + Research Collaboration',
-      points: ['Led DeFi and AI Infra narrative research', 'Supported 0-1 project positioning and market strategy', 'Worked across chain, accelerator and VC partner networks'],
+      points: ['Led DeFi and AI Infra narrative research', 'Supported 0-1 project positioning and market strategy', 'Worked across chain, accelerator and VC partner networks', 'Converted research outputs into execution roadmaps'],
+    },
+    {
+      title: 'W3Hub & Solar Solana · Community Ops',
+      points: ['30+ offline technical events', '4000+ developers and users reached', 'Sustained APAC ecosystem collaborations', 'Built long-term partner pipeline'],
+    },
+    {
+      title: 'AM18 · Strategic Execution',
+      points: ['Supported cross-domain execution and partner delivery', 'Bridged product and go-to-market coordination'],
+    },
+    {
+      title: 'Cushman & Wakefield / HHM · Strategic Consulting',
+      points: ['5+ years in Web2 strategy and consulting delivery', 'Led end-to-end multi-million RMB projects', 'Built valuation, return and feasibility models for decisions', 'Managed multi-stakeholder delivery cadence'],
     },
   ],
 };
@@ -348,14 +398,17 @@ const marqueeItems = ['Wallet Systems', 'Token Mechanics', 'Growth Loops', 'Prot
 
 export default function App() {
   const [lang, setLang] = useState('zh');
+  const [heroFxActive, setHeroFxActive] = useState(true);
   const workSectionRef = useRef(null);
   const railRef = useRef(null);
   const pinRef = useRef(null);
+  const [dubaiTime, setDubaiTime] = useState('');
   const t = copy[lang];
   const caps = useMemo(() => capabilityItems[lang], [lang]);
   const works = useMemo(() => projectItems[lang], [lang]);
   const timeline = useMemo(() => timelineItems[lang], [lang]);
   const research = useMemo(() => researchPosts[lang], [lang]);
+  const services = useMemo(() => serviceItems[lang], [lang]);
 
   useEffect(() => {
     const nodes = document.querySelectorAll('[data-reveal]');
@@ -398,8 +451,10 @@ export default function App() {
 
     const tick = () => {
       if (window.innerWidth <= 1024) return;
+      const rect = section.getBoundingClientRect();
+      if (rect.top > window.innerHeight || rect.bottom < 0) return;
       const travel = Math.max(1, section.offsetHeight - window.innerHeight);
-      const progress = Math.min(Math.max(-section.getBoundingClientRect().top / travel, 0), 1);
+      const progress = Math.min(Math.max(-rect.top / travel, 0), 1);
       const shift = -progress * maxShift;
       rail.style.setProperty('--rail-shift', `${shift}px`);
     };
@@ -419,8 +474,103 @@ export default function App() {
     };
   }, [lang, works.length]);
 
+  useEffect(() => {
+    const formatTime = () =>
+      new Intl.DateTimeFormat('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true,
+        timeZone: 'Asia/Shanghai',
+      }).format(new Date());
+
+    setDubaiTime(formatTime());
+    const timer = setInterval(() => setDubaiTime(formatTime()), 60 * 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const getOffsetTop = (target) => {
+      const nav = document.querySelector('.top-nav');
+      const navHeight = nav ? nav.getBoundingClientRect().height : 76;
+      const targetTop = target.getBoundingClientRect().top + window.scrollY;
+      return Math.max(0, targetTop - navHeight - 18);
+    };
+
+    const scrollToHash = (hash, smooth = true) => {
+      if (!hash || hash === '#') return;
+      const target = document.querySelector(hash);
+      if (!target) return;
+      window.scrollTo({
+        top: getOffsetTop(target),
+        behavior: smooth ? 'smooth' : 'auto',
+      });
+    };
+
+    const onClick = (event) => {
+      const anchor = event.target.closest('a[href^="#"]');
+      if (!anchor) return;
+
+      const hash = anchor.getAttribute('href');
+      if (!hash || hash === '#') return;
+      const target = document.querySelector(hash);
+      if (!target) return;
+
+      event.preventDefault();
+      scrollToHash(hash, true);
+      window.history.replaceState(null, '', hash);
+    };
+
+    const onHashChange = () => scrollToHash(window.location.hash, false);
+
+    document.addEventListener('click', onClick);
+    window.addEventListener('hashchange', onHashChange);
+
+    if (window.location.hash) {
+      requestAnimationFrame(() => scrollToHash(window.location.hash, false));
+    }
+
+    return () => {
+      document.removeEventListener('click', onClick);
+      window.removeEventListener('hashchange', onHashChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    const targets = document.querySelectorAll('.hero-marquee, .partner-rail');
+    if (!targets.length) return undefined;
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle('is-active', entry.isIntersecting);
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    targets.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, [lang]);
+
+  useEffect(() => {
+    let rafId = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        setHeroFxActive(window.scrollY < window.innerHeight * 0.9);
+      });
+    };
+
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      cancelAnimationFrame(rafId);
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
   return (
-    <div className="site-shell">
+    <div className={`site-shell ${heroFxActive ? 'hero-fx-active' : ''}`}>
       <div className="bg-orb bg-orb-top" aria-hidden="true" />
       <div className="bg-orb bg-orb-bottom" aria-hidden="true" />
       <div className="noise-layer" aria-hidden="true" />
@@ -447,7 +597,7 @@ export default function App() {
         </div>
       </header>
 
-      <main>
+      <main className="page-main">
         <section id="home" className="hero container" data-reveal>
           <div className="hero-grid">
             <div>
@@ -455,6 +605,7 @@ export default function App() {
                 <Globe size={14} />
                 {t.heroEyebrow}
               </p>
+              <p className="hero-identity">{t.heroIdentity}</p>
               <h1>
                 {t.heroTitle1}
                 <br />
@@ -541,6 +692,21 @@ export default function App() {
                 </article>
               );
             })}
+          </div>
+        </section>
+
+        <section className="container section" data-reveal>
+          <div className="section-head">
+            <p>{t.serviceTitle}</p>
+            <h2>{t.serviceHead}</h2>
+          </div>
+          <div className="service-grid">
+            {services.map((item) => (
+              <article key={item.title} className="service-card">
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </article>
+            ))}
           </div>
         </section>
 
@@ -638,34 +804,17 @@ export default function App() {
             ))}
           </div>
 
-          <div className="exp-split">
-            <div className="exp-column" data-reveal>
-              <h3>{lang === 'zh' ? 'Vibe Experience' : 'Vibe Experience'}</h3>
-              {vibeExperience[lang].map((item) => (
-                <article key={item.title} className="exp-card">
-                  <h4>{item.title}</h4>
-                  <ul>
-                    {item.points.map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
-                  </ul>
-                </article>
-              ))}
-            </div>
-
-            <div className="exp-column" data-reveal>
-              <h3>{lang === 'zh' ? 'Web2 Experience' : 'Web2 Experience'}</h3>
-              {web2Experience[lang].map((item) => (
-                <article key={item.title} className="exp-card">
-                  <h4>{item.title}</h4>
-                  <ul>
-                    {item.points.map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
-                  </ul>
-                </article>
-              ))}
-            </div>
+          <div className="experience-list" data-reveal>
+            {mergedExperience[lang].map((item) => (
+              <article key={item.title} className="exp-card">
+                <h4>{item.title}</h4>
+                <ul>
+                  {item.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </section>
 
@@ -696,6 +845,58 @@ export default function App() {
             </span>
           </div>
         </section>
+
+        <footer className="site-footer" data-reveal>
+          <div className="container footer-shell">
+            <div className="footer-top">
+            <div className="footer-intro">
+              <h3>Shaun Han</h3>
+              <p>
+                Web3 Product Lead, Strategy Researcher and Ecosystem Builder. Helping teams design better products and build
+                stronger growth systems.
+              </p>
+              <div className="footer-meta">GMT+8 • {dubaiTime || '7:42 PM'}</div>
+            </div>
+
+            <div className="footer-links">
+              <div>
+                <h4>Quick Links</h4>
+                <a href="#work">Articles</a>
+                <a href="#about">Speaking</a>
+                <a href="#work">Courses</a>
+                <a href="#capabilities">Uses</a>
+                <a href="#work">Demos</a>
+              </div>
+              <div>
+                <h4>Connect</h4>
+                <a href="https://github.com/biblehs" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                  LinkedIn
+                </a>
+                <a href="https://x.com/shaunh666" target="_blank" rel="noreferrer">
+                  Twitter
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
+                  YouTube
+                </a>
+                <a href="https://polywork.com" target="_blank" rel="noreferrer">
+                  Polywork
+                </a>
+              </div>
+            </div>
+            </div>
+            <div className="footer-bottom">
+              <p>© 2026 Shaun Han. All rights reserved.</p>
+              <div>
+                <a href="#home">Home</a>
+                <span>•</span>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   );
