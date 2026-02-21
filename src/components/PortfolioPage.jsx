@@ -17,6 +17,8 @@ import {
   Radar,
 } from 'lucide-react';
 
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/page' : '';
+
 const copy = {
   zh: {
     nav: ['Capabilities', 'Work', 'About'],
@@ -322,12 +324,12 @@ const researchPosts = {
 };
 
 const partnerLogos = [
-  { name: 'Huma Finance', logo: '/logos/huma-finance.svg', href: 'https://huma.finance' },
-  { name: 'Solar', logo: '/logos/solar.svg', href: 'https://solar.org' },
-  { name: 'Solana Foundation', logo: '/logos/solana-foundation.svg', href: 'https://solana.org' },
-  { name: 'ArrivalX', logo: '/logos/arrivalx.svg', href: 'https://arrivalx.io' },
-  { name: 'Tide Group', logo: '/logos/tide-group.svg', href: 'https://www.tide.group' },
-  { name: 'SNS', logo: '/logos/sns.svg', href: 'https://www.sns.id' },
+  { name: 'Huma Finance', logo: `${BASE_PATH}/logos/huma-finance.svg`, href: 'https://huma.finance' },
+  { name: 'Solar', logo: `${BASE_PATH}/logos/solar.svg`, href: 'https://solar.org' },
+  { name: 'Solana Foundation', logo: `${BASE_PATH}/logos/solana-foundation.svg`, href: 'https://solana.org' },
+  { name: 'ArrivalX', logo: `${BASE_PATH}/logos/arrivalx.svg`, href: 'https://arrivalx.io' },
+  { name: 'Tide Group', logo: `${BASE_PATH}/logos/tide-group.svg`, href: 'https://www.tide.group' },
+  { name: 'SNS', logo: `${BASE_PATH}/logos/sns.svg`, href: 'https://www.sns.id' },
 ];
 
 const mergedExperience = {
@@ -404,7 +406,7 @@ export default function App() {
   const workSectionRef = useRef(null);
   const railRef = useRef(null);
   const pinRef = useRef(null);
-  const [dubaiTime, setDubaiTime] = useState('');
+  const [gmt8Time, setGmt8Time] = useState('');
   const t = copy[lang];
   const caps = useMemo(() => capabilityItems[lang], [lang]);
   const works = useMemo(() => projectItems[lang], [lang]);
@@ -492,8 +494,8 @@ export default function App() {
         timeZone: 'Asia/Shanghai',
       }).format(new Date());
 
-    setDubaiTime(formatTime());
-    const timer = setInterval(() => setDubaiTime(formatTime()), 60 * 1000);
+    setGmt8Time(formatTime());
+    const timer = setInterval(() => setGmt8Time(formatTime()), 60 * 1000);
     return () => clearInterval(timer);
   }, []);
 
@@ -864,7 +866,7 @@ export default function App() {
                 Web3 Product Lead, Strategy Researcher and Ecosystem Builder. Helping teams design better products and build
                 stronger growth systems.
               </p>
-              <div className="footer-meta">GMT+8 • {dubaiTime || '7:42 PM'}</div>
+              <div className="footer-meta">GMT+8 • {gmt8Time || '7:42 PM'}</div>
             </div>
 
             <div className="footer-links">
