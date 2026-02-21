@@ -1,4 +1,7 @@
 .history/
 node_modules/
-.DS_Storedocs/
+.next/
+dist/
+out/
+.DS_Store
 docs/
