@@ -1,0 +1,6 @@
+<svg width="220" height="68" viewBox="0 0 220 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="68" rx="14" fill="#0B1117"/>
+  <circle cx="30" cy="34" r="11" stroke="#7FE6FF" stroke-width="2"/>
+  <path d="M30 23V45M19 34H41" stroke="#7FE6FF" stroke-width="2"/>
+  <text x="52" y="40" fill="#E8F7FF" font-size="18" font-family="Arial, sans-serif" font-weight="700">Huma Finance</text>
+</svg>
