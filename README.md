@@ -43,7 +43,9 @@ base: "/page/"
 
 Production build output (dist/) is generated automatically and not manually stored in version history.
 
-🚀 Deployment Architecture
+---
+
+## 🚀 Deployment Architecture
 
 Push → CI → Build → Deploy
 
@@ -61,7 +63,9 @@ No artifact pollution in Git history
 
 The deployment pipeline is reproducible and environment-independent.
 
-📦 Versioning Strategy
+---
+
+## 📦 Versioning Strategy
 
 Stable release states are marked using Git tags.
 
@@ -80,7 +84,9 @@ or resetting to a tagged release
 
 Versioning is part of engineering discipline — not ceremony.
 
-🧠 Engineering Principles Applied
+---
+
+## 🧠 Engineering Principles Applied
 
 Proper static asset path resolution for subdirectory environments
 
@@ -99,7 +105,9 @@ Production builds only (no development artifacts deployed)
 Static hosting implies frontend code visibility.
 Security boundaries are respected at architectural level.
 
-🌐 Broader Context
+---
+
+## 🌐 Broader Context
 
 This project aligns with my broader work across:
 
@@ -118,7 +126,9 @@ Ecosystem expansion
 The goal is not complexity.
 The goal is clarity, ownership, and structured iteration.
 
-🔮 Future Iterations
+---
+
+## 🔮 Future Iterations
 
 Planned improvements include:
 
