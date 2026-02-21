@@ -1,51 +1,52 @@
-# Shaun Han — Portfolio
+Shaun Han — Portfolio
 
 A structured, versioned, infrastructure-aware personal portfolio.
 
 This project is intentionally minimal in UI, but deliberate in architecture.
 
-It reflects how I operate across Web3 ecosystems —  
+It reflects how I operate across Web3 ecosystems —
 bridging product thinking, growth execution, infrastructure awareness, and technical ownership.
 
 Live Site:
 https://biblehs.github.io/page/
 
----
-
-## 🧱 Builder Mindset
+🧱 Builder Mindset
 
 Even a personal website should follow production standards.
 
 This repository demonstrates:
 
-- End-to-end ownership (development → CI/CD → deployment)
-- Infrastructure awareness in static hosting environments
-- Version-controlled iteration
-- Clean separation between source code and build artifacts
-- Deterministic and reproducible deployment workflows
+End-to-end ownership (development → CI/CD → deployment)
+
+Infrastructure awareness in static hosting environments
+
+Version-controlled iteration
+
+Clean separation between source code and build artifacts
+
+Deterministic and reproducible deployment workflows
 
 Shipping is not enough — shipping with structure matters.
 
----
+⚙️ Tech Stack
 
-## ⚙️ Tech Stack
+Vite
 
-- **Vite**
-- **React**
-- **Tailwind CSS**
-- **GitHub Actions (CI/CD)**
-- **GitHub Pages (Static Hosting)**
+React
+
+Tailwind CSS
+
+GitHub Actions (CI/CD)
+
+GitHub Pages (Static Hosting)
 
 Subdirectory deployment is explicitly configured:
 
-```js
 base: "/page/"
 
 Production build output (dist/) is generated automatically and not manually stored in version history.
 
----
-
-## 🚀 Deployment Architecture
+🚀 Deployment Architecture
 
 Push → CI → Build → Deploy
 
@@ -63,9 +64,7 @@ No artifact pollution in Git history
 
 The deployment pipeline is reproducible and environment-independent.
 
----
-
-## 📦 Versioning Strategy
+📦 Versioning Strategy
 
 Stable release states are marked using Git tags.
 
@@ -84,9 +83,7 @@ or resetting to a tagged release
 
 Versioning is part of engineering discipline — not ceremony.
 
----
-
-## 🧠 Engineering Principles Applied
+🧠 Engineering Principles Applied
 
 Proper static asset path resolution for subdirectory environments
 
@@ -105,9 +102,7 @@ Production builds only (no development artifacts deployed)
 Static hosting implies frontend code visibility.
 Security boundaries are respected at architectural level.
 
----
-
-## 🌐 Broader Context
+🌐 Broader Context
 
 This project aligns with my broader work across:
 
@@ -126,9 +121,7 @@ Ecosystem expansion
 The goal is not complexity.
 The goal is clarity, ownership, and structured iteration.
 
----
-
-## 🔮 Future Iterations
+🔮 Future Iterations
 
 Planned improvements include:
 
