@@ -1,26 +1,32 @@
 # Shaun Han — Portfolio
 
-A structured, versioned, infrastructure-aware personal portfolio.
+**Structured. Versioned. Infrastructure-aware.**
 
-This project is intentionally minimal in UI, yet deliberate in architecture.  
-It reflects how I operate across Web3 ecosystems — bridging product thinking, growth execution, infrastructure awareness, and technical ownership.
+A modern personal portfolio built with engineering discipline and a builder mindset.
 
-**Live Site:**  
+This project reflects how I operate across Web3 ecosystems —  
+bridging **product thinking**, **growth execution**, and **technical ownership**.
+
+---
+
+## 🌐 Live Site
+
+**GitHub Pages Deployment:**  
 https://biblehs.github.io/page/
 
 ---
 
 ## 🧱 Builder Mindset
 
-Even a personal website should follow production standards.
+Even a personal portfolio should follow production standards.
 
 This repository demonstrates:
 
-- End-to-end ownership (development → CI/CD → deployment)
-- Infrastructure awareness in static hosting environments
-- Version-controlled iteration
+- **End-to-end ownership** (development → CI/CD → deployment)
+- **Infrastructure awareness** in static environments
+- **Version-controlled iteration**
 - Clean separation between source code and build artifacts
-- Deterministic and reproducible deployment workflows
+- Reproducible and deterministic deployment workflows
 
 Shipping is not enough — shipping with structure matters.
 
@@ -38,102 +44,94 @@ Subdirectory deployment is explicitly configured:
 
 ```js
 base: "/page/"
+```
 
-Production build output (dist/) is generated automatically and not manually stored in version history.
+Production build output (`dist/`) is generated automatically and is not manually committed.
 
-🚀 Deployment Architecture
+---
 
-The deployment pipeline follows a clear flow:
+## 🚀 Deployment Architecture
 
-Push → CI → Build → Deploy
+The deployment pipeline follows a structured flow:
 
-Code is pushed to main
+**Push → CI → Build → Deploy**
 
-GitHub Actions installs dependencies
-
-A clean production build is generated
-
-Static assets are deployed automatically to GitHub Pages
+1. Code is pushed to `main`
+2. GitHub Actions installs dependencies
+3. A clean production build is generated
+4. Static assets are deployed automatically
 
 There are:
 
-No manual uploads
+- No manual uploads  
+- No local environment inconsistencies  
+- No build artifact pollution in Git history  
 
-No local build inconsistencies
+The deployment pipeline is fully reproducible.
 
-No artifact pollution in Git history
+---
 
-The deployment pipeline is reproducible and environment-independent.
+## 📦 Versioning Strategy
 
-📦 Versioning Strategy
-
-Stable release states are marked using Git tags.
+Stable releases are marked using **Git tags**.
 
 Example:
 
+```bash
 git tag -a v1 -m "v1 release"
 git push origin v1
+```
 
-Each tagged version represents a structured iteration milestone.
+Each tagged version represents a structured milestone.
 
-Rollback is possible via:
+Rollback options:
 
-git revert
-
-or resetting to a tagged release
+- `git revert`
+- `git reset` to a tagged version
 
 Versioning is part of engineering discipline — not ceremony.
 
-🧠 Engineering Principles Applied
+---
 
-Proper static asset path resolution for subdirectory environments
+## 🧠 Engineering Principles Applied
 
-CI/CD-first deployment workflow
+- Proper static asset path resolution for subdirectory environments
+- CI/CD-first deployment workflow
+- Explicit base configuration for GitHub Pages
+- Clean repository structure
+- Minimal dependency surface
+- No client-side secrets
+- Production builds only
 
-Explicit base configuration for GitHub Pages
+Static hosting implies frontend visibility.  
+Security boundaries are respected at the architectural level.
 
-Clean repository structure
+---
 
-Minimal dependency surface
+## 🌐 Broader Context
 
-No secrets stored client-side
+This portfolio aligns with my broader work across:
 
-Production builds only (no development artifacts deployed)
+- **Web3 ecosystems**
+- **Cross-chain infrastructure**
+- **Wallet & DeFi integrations**
+- **Growth strategy in emerging markets**
+- **Developer enablement**
+- **Ecosystem expansion**
 
-Static hosting implies frontend code visibility.
-Security boundaries are respected at architectural level.
+The goal is not complexity.  
+The goal is **clarity, ownership, and structured iteration**.
 
-🌐 Broader Context
+---
 
-This project aligns with my broader work across:
-
-Web3 ecosystems
-
-Cross-chain infrastructure
-
-Wallet and DeFi integrations
-
-Growth strategy in emerging markets
-
-Developer enablement
-
-Ecosystem expansion
-
-The goal is not complexity.
-The goal is clarity, ownership, and structured iteration.
-
-🔮 Future Iterations
+## 🔮 Future Iterations
 
 Planned improvements include:
 
-Expanded project case studies
-
-UI and performance refinement
-
-Optional analytics integration
-
-Custom domain migration
-
-Structured content evolution
+- Expanded project case studies
+- UI/UX refinement
+- Performance optimization
+- Optional analytics integration
+- Custom domain migration
 
 This repository will continue evolving — version by version.
