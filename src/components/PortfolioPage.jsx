@@ -413,6 +413,13 @@ export default function App() {
   const services = useMemo(() => serviceItems[lang], [lang]);
 
   useEffect(() => {
+    document.documentElement.classList.add('js-enabled');
+    return () => {
+      document.documentElement.classList.remove('js-enabled');
+    };
+  }, []);
+
+  useEffect(() => {
     const nodes = document.querySelectorAll('[data-reveal]');
     const io = new IntersectionObserver(
       (entries) => {
