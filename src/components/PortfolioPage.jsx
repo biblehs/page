@@ -401,7 +401,7 @@ const statValues = [
 const marqueeItems = ['Wallet Systems', 'Token Mechanics', 'Growth Loops', 'Protocol Research', 'APAC DevRel'];
 
 export default function App() {
-  const [lang, setLang] = useState('zh');
+  const [lang, setLang] = useState('en');
   const [heroFxActive, setHeroFxActive] = useState(true);
   const workSectionRef = useRef(null);
   const railRef = useRef(null);
