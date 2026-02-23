@@ -17,7 +17,7 @@ import {
   Radar,
 } from 'lucide-react';
 
-const BASE_PATH = process.env.NODE_ENV === 'production' ? '/page' : '';
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const copy = {
   zh: {
@@ -27,9 +27,9 @@ const copy = {
     heroEyebrow: 'APAC · Product / Strategy / Web3',
     heroTitle1: 'Digital Product Partner',
     heroTitle2: 'for Bold Web3 Teams',
-    heroIdentity: 'Shaun Han · Product Lead / Strategy / Growth',
+    heroIdentity: 'Shaun Han · Product Lead · Strategy · Growth',
     heroCopy:
-      '我帮助团队把复杂叙事转成可执行产品：从 0-1 架构、机制设计到增长落地，在速度和质量之间建立稳定平衡。',
+      '我是一名兼具产品、策略与增长执行能力的 Web3 负责人：可从 0-1 完成产品设计与上线，联动行业资源推进项目与客户 onboarding，并以 SOP 与标准化流程保障交付效率与质量（已在 BuzzUp 实战验证）。',
     heroSignals: ['Live Product Ops', 'On-chain Research', 'GTM Execution'],
     statLabels: ['累计用户规模', '生态集成数量', '策略执行效率'],
     viewWork: 'View Selected Work',
@@ -40,6 +40,8 @@ const copy = {
     capHead: '设计可持续推进的产品与增长系统',
     serviceTitle: 'Engagement Models',
     serviceHead: '我通常以这三种方式参与项目',
+    opsTitle: 'Execution Scope',
+    opsHead: '从策略到交付的核心能力模块',
     workTitle: 'Selected Work',
     workHead: '以产品结果为核心的项目实践',
     researchTitle: 'Past Research Articles',
@@ -61,9 +63,9 @@ const copy = {
     heroEyebrow: 'APAC · Product / Strategy / Web3',
     heroTitle1: 'Digital Product Partner',
     heroTitle2: 'for Bold Web3 Teams',
-    heroIdentity: 'Shaun Han · Product Lead / Strategy / Growth',
+    heroIdentity: 'Shaun Han · Product Lead · Strategy · Growth',
     heroCopy:
-      'I help teams turn complex narratives into executable products, balancing speed with rigor from 0-1 architecture to growth execution.',
+      'I help teams turn complex narratives into executable products, balancing speed with rigor from 0-1 architecture to GTM execution.',
     heroSignals: ['Live Product Ops', 'On-chain Research', 'GTM Execution'],
     statLabels: ['Cumulative user base', 'Ecosystem integrations', 'Execution efficiency'],
     viewWork: 'View Selected Work',
@@ -74,6 +76,8 @@ const copy = {
     capHead: 'Build durable product and growth systems',
     serviceTitle: 'Engagement Models',
     serviceHead: 'Three ways I usually work with teams',
+    opsTitle: 'Execution Scope',
+    opsHead: 'Core modules I run from strategy to delivery',
     workTitle: 'Selected Work',
     workHead: 'Case studies centered on business outcomes',
     researchTitle: 'Past Research Articles',
@@ -158,6 +162,45 @@ const serviceItems = {
   ],
 };
 
+const operatingItems = {
+  zh: [
+    {
+      title: '0-1 Product + Delivery',
+      desc: '从定位、结构设计到上线节奏管理，确保产品策略可以真实落地并可持续迭代。',
+    },
+    {
+      title: 'Account & Onboarding Ops',
+      desc: '面向项目方和客户推进 onboarding，建立跨团队协同机制与可复用流程模板。',
+    },
+    {
+      title: 'Research & Narrative',
+      desc: '完成市场与用户研究、项目定位和叙事编写，并转化为对外内容与沟通材料。',
+    },
+    {
+      title: 'GTM & Channel Management',
+      desc: '联动生态、渠道与合作伙伴资源，推进 AMA、活动和增长动作的一体化执行。',
+    },
+  ],
+  en: [
+    {
+      title: '0-1 Product + Delivery',
+      desc: 'From positioning and structure design to launch cadence, translating strategy into shippable product execution.',
+    },
+    {
+      title: 'Account & Onboarding Ops',
+      desc: 'Driving project and client onboarding with cross-team workflows and reusable operating templates.',
+    },
+    {
+      title: 'Research & Narrative',
+      desc: 'Converting market and user research into project positioning, narrative writing, and external communication assets.',
+    },
+    {
+      title: 'GTM & Channel Management',
+      desc: 'Coordinating ecosystems, channels, and partners to execute AMA, campaigns, and distribution growth motions.',
+    },
+  ],
+};
+
 const projectItems = {
   zh: [
     {
@@ -224,34 +267,37 @@ const timelineItems = {
     {
       time: '2024.12 - Present',
       role: 'Strategy & Product Lead · BuzzUp',
-      detail: '负责 Web3 社交钱包的产品系统、生态集成与区域增长策略。',
+      detail: '负责产品策略、0-1 架构、客户 onboarding 及 SOP 标准化流程建设，推动增长与交付协同。',
     },
     {
       time: '2024.01 - 2024.12',
       role: 'Strategic Researcher · Tide Group',
-      detail: '主导 DeFi / AI Infra 方向投研与产品化策略。',
+      detail: '主导市场/用户研究、项目定位、叙事输出与 GTM 资源协调，支持社媒长文、AMA 和渠道管理。',
     },
     {
       time: '2024.09 - Present',
       role: 'Co-founder · W3Hub',
-      detail: '推动 APAC 开发者社区建设与多生态合作落地。',
+      detail: '推动 APAC 开发者社区、生态合作与 DevRel 落地，对接公链并协助课程与小型项目分享。',
     },
   ],
   en: [
     {
       time: '2024.12 - Present',
       role: 'Strategy & Product Lead · BuzzUp',
-      detail: 'Leading product systems, integrations and regional growth for a social wallet.',
+      detail:
+        'Owning product strategy, 0-1 architecture, client onboarding, and SOP standardization to align growth with delivery quality.',
     },
     {
       time: '2024.01 - 2024.12',
       role: 'Strategic Researcher · Tide Group',
-      detail: 'Owned DeFi and AI Infra research translated into actionable product strategy.',
+      detail:
+        'Led market/user research, project positioning, narrative writing, and GTM coordination across long-form content, AMA, and channels.',
     },
     {
       time: '2024.09 - Present',
       role: 'Co-founder · W3Hub',
-      detail: 'Driving APAC developer community and multi-ecosystem collaboration.',
+      detail:
+        'Driving APAC developer community, ecosystem collaboration, and DevRel programs with L1 partners, courses, and project sharing sessions.',
     },
   ],
 };
@@ -335,52 +381,96 @@ const partnerLogos = [
 const mergedExperience = {
   zh: [
     {
+      period: '2024.12 - Present',
       title: 'BuzzUp · Strategy & Product Lead',
-      points: ['300k+ 用户增长规模', '20+ DeFi / AI 协议接入', '覆盖产品架构、风控与增长闭环'],
+      points: [
+        '主导 0-1 产品设计与执行，推动策略到上线落地',
+        '搭建客户 onboarding 流程，提升跨团队协作效率',
+        '沉淀 SOP 与标准化机制，支撑 300k+ 用户与 20+ 生态接入',
+      ],
     },
     {
-      title: 'Advisor · Huma Finance / ArrivalX',
-      points: ['聚焦 PayFi 与跨境支付场景优化', '重构 B/C 端关键用户路径', '提升机构合作与转化效率', '沉淀可复用的合作交付模板'],
-    },
-    {
+      period: '2024.01 - 2024.12',
       title: 'Tide Group · 做市与投研协同',
-      points: ['主导 DeFi 与 AI Infra 叙事研究', '参与 0-1 项目定位和市场策略', '连接公链、加速器与 VC 资源网络', '推动研究结论转化为可执行路线'],
+      points: [
+        '主导市场与用户研究，明确项目定位与叙事方向',
+        '输出长文与 AMA 内容，提升项目对外表达一致性',
+        '推进 GTM 与渠道管理，联动资源实现高效分发',
+      ],
     },
     {
+      period: '2024 - Present',
+      title: 'Advisor · Huma Finance / ArrivalX',
+      points: ['聚焦 PayFi 与跨境支付优化', '重构关键用户路径并提升转化', '建立可复用合作交付模板'],
+    },
+    {
+      period: '2024.09 - Present',
       title: 'W3Hub & Solar Solana · Community Ops',
-      points: ['30+ 线下活动策划执行', '4000+ 开发者与用户触达', '持续推动 APAC 生态联动', '建立长期合作方资源池'],
+      points: [
+        '建设 APAC 开发者社区并推动生态合作落地',
+        '对接公链生态，协助课程与小型项目分享活动',
+        '组织 30+ 活动，触达 4000+ 开发者与用户',
+      ],
     },
     {
+      period: '2025 - Present',
       title: 'AM18 · Strategic Execution',
-      points: ['参与跨领域业务推进与合作落地', '支持产品与市场协同交付'],
+      points: [
+        '研究量化资管产品的结构、收益、回撤、风险与合规类型',
+        '按客户风险偏好定制化匹配资管产品方案',
+        '与 HashKey、Amber、ChainUp、新火等机构建立合作关系',
+      ],
     },
     {
+      period: '2019 - 2023',
       title: 'Cushman & Wakefield / HHM · 战略咨询',
       points: ['5 年+ Web2 战略与咨询交付经验', '端到端千万级项目交付（政府/国央企/金融机构）', '输出估值、收益与可行性模型用于决策', '管理跨部门协同与项目节奏控制'],
     },
   ],
   en: [
     {
+      period: 'Dec 2024 - Present',
       title: 'BuzzUp · Strategy & Product Lead',
-      points: ['Scaled to 300k+ users', '20+ DeFi / AI integrations', 'Built product, risk-control and growth loops'],
+      points: [
+        'Led 0-1 product design and execution from strategy to launch',
+        'Built client onboarding workflows with cross-functional account operations',
+        'Standardized SOP delivery, supporting 300k+ users and 20+ integrations',
+      ],
     },
     {
-      title: 'Advisor · Huma Finance / ArrivalX',
-      points: ['Focused on PayFi and cross-border payment flows', 'Reworked core B2B/B2C user journeys', 'Improved partner conversion efficiency', 'Created reusable delivery playbooks'],
-    },
-    {
+      period: 'Jan 2024 - Dec 2024',
       title: 'Tide Group · MM + Research Collaboration',
-      points: ['Led DeFi and AI Infra narrative research', 'Supported 0-1 project positioning and market strategy', 'Worked across chain, accelerator and VC partner networks', 'Converted research outputs into execution roadmaps'],
+      points: [
+        'Led market and user research for project positioning and narrative',
+        'Owned external output through long-form content and online AMA programs',
+        'Coordinated GTM resources and channel management with ecosystem partners',
+      ],
     },
     {
+      period: '2024 - Present',
+      title: 'Advisor · Huma Finance / ArrivalX',
+      points: ['Focused on PayFi and cross-border payment optimization', 'Reworked key user journeys to improve conversion', 'Built reusable partner delivery playbooks'],
+    },
+    {
+      period: 'Sep 2024 - Present',
       title: 'W3Hub & Solar Solana · Community Ops',
-      points: ['30+ offline technical events', '4000+ developers and users reached', 'Sustained APAC ecosystem collaborations', 'Built long-term partner pipeline'],
+      points: [
+        'Built APAC developer community and ecosystem collaboration programs',
+        'Expanded DevRel with L1 coordination, courses, and mini project-sharing sessions',
+        'Executed 30+ events reaching 4000+ developers and users',
+      ],
     },
     {
+      period: '2025 - Present',
       title: 'AM18 · Strategic Execution',
-      points: ['Supported cross-domain execution and partner delivery', 'Bridged product and go-to-market coordination'],
+      points: [
+        'Analyzed quant asset-management products across yield, drawdown, risk, and compliance',
+        'Delivered customized product matching based on client risk and return preferences',
+        'Built strong partnerships with HashKey, Amber, ChainUp, and New Huo counterparts',
+      ],
     },
     {
+      period: '2019 - 2023',
       title: 'Cushman & Wakefield / HHM · Strategic Consulting',
       points: ['5+ years in Web2 strategy and consulting delivery', 'Led end-to-end multi-million RMB projects', 'Built valuation, return and feasibility models for decisions', 'Managed multi-stakeholder delivery cadence'],
     },
@@ -413,6 +503,23 @@ export default function App() {
   const timeline = useMemo(() => timelineItems[lang], [lang]);
   const research = useMemo(() => researchPosts[lang], [lang]);
   const services = useMemo(() => serviceItems[lang], [lang]);
+  const operating = useMemo(() => operatingItems[lang], [lang]);
+
+  useEffect(() => {
+    const ignoreEthereumRedefine = (event) => {
+      const message = event?.message || event?.reason?.message || '';
+      if (typeof message === 'string' && message.includes('Cannot redefine property: ethereum')) {
+        event.preventDefault?.();
+      }
+    };
+
+    window.addEventListener('error', ignoreEthereumRedefine);
+    window.addEventListener('unhandledrejection', ignoreEthereumRedefine);
+    return () => {
+      window.removeEventListener('error', ignoreEthereumRedefine);
+      window.removeEventListener('unhandledrejection', ignoreEthereumRedefine);
+    };
+  }, []);
 
   useEffect(() => {
     document.documentElement.classList.add('js-enabled');
@@ -721,6 +828,21 @@ export default function App() {
           </div>
         </section>
 
+        <section className="container section" data-reveal>
+          <div className="section-head">
+            <p>{t.opsTitle}</p>
+            <h2>{t.opsHead}</h2>
+          </div>
+          <div className="compact-grid">
+            {operating.map((item) => (
+              <article key={item.title} className="compact-card">
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section id="work" className="container section work-section" data-reveal ref={workSectionRef}>
           <div className="section-head">
             <p>{t.workTitle}</p>
@@ -818,6 +940,7 @@ export default function App() {
           <div className="experience-list" data-reveal>
             {mergedExperience[lang].map((item) => (
               <article key={item.title} className="exp-card">
+                <p className="exp-period">{item.period}</p>
                 <h4>{item.title}</h4>
                 <ul>
                   {item.points.map((point) => (

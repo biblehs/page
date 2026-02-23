@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
+const isGithubPagesBuild = process.env.GITHUB_ACTIONS === 'true';
+const basePath = isGithubPagesBuild ? '/page' : '';
 
 const nextConfig = {
   reactStrictMode: true,
@@ -8,8 +9,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? '/page' : '',
-  assetPrefix: isProd ? '/page/' : '',
+  basePath,
+  assetPrefix: basePath ? `${basePath}/` : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;

@@ -902,19 +902,49 @@ a {
 .experience-list {
   margin-top: 18px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.experience-list::before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(140, 222, 255, 0.44), rgba(140, 222, 255, 0.06));
 }
 
 .exp-card {
+  position: relative;
   border: 1px solid var(--line-soft);
   border-radius: 14px;
   background: rgba(8, 11, 16, 0.6);
-  padding: 14px;
+  padding: 16px 16px 16px 18px;
 }
 
-.exp-card + .exp-card {
-  margin-top: 10px;
+.exp-card::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #93e8ff;
+  box-shadow: 0 0 0 3px rgba(70, 166, 194, 0.22);
+}
+
+.exp-period {
+  margin: 0 0 8px;
+  color: #cbd4de;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .exp-card h4 {
@@ -1147,7 +1177,6 @@ a {
   .cap-grid,
   .service-grid,
   .timeline,
-  .experience-list,
   .research-grid {
     grid-template-columns: 1fr;
   }
